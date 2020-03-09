@@ -13,7 +13,7 @@ class Contact extends Component {
                             alt="avatar"
                             style={{height:"200px"}}
                         />
-                        <p style={{width:"75%", margin:"auto", paddingTop:"1em"}}> This is info about contacting Ryan</p>
+                        <p style={{width:"75%", margin:"auto", paddingTop:"1em", fontSize: "20px", fontFamily:"Oxygen"}}> This is info about contacting Ryan</p>
                     </Cell>
                     <Cell col={6}>
                         <h2>Contact Me</h2>
@@ -22,16 +22,31 @@ class Contact extends Component {
                         <div className="contact-list">
                             <List>
                                 <ListItem>
-                                    <ListItemContent style={{fontsize: "25px", fontFamily: "Anton"}}>
+                                    <ListItemContent style={{fontSize: "30px", fontFamily: "Anton"}}>
                                         <i className="fa fa-phone-square" aria-hidden="true"/>
                                         123 456 789
                                     </ListItemContent>
                                 </ListItem>
+
                                 <ListItem>
-                                    <ListItemContent icon="person">Aaron Paul</ListItemContent>
+                                    <ListItemContent style={{fontSize: "25px", fontFamily: "Anton"}}>
+                                        <i className="fa fa-envelope" aria-hidden="true"/>
+                                        romeroryan01@gmail.com
+                                    </ListItemContent>
                                 </ListItem>
+
                                 <ListItem>
-                                    <ListItemContent icon="person">Bob Odenkirk</ListItemContent>
+                                    <ListItemContent style={{fontSize: "30px", fontFamily: "Anton"}}>
+                                        <i className="fa fa-skype" aria-hidden="true"/>
+                                        SkypeID
+                                    </ListItemContent>
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: "30px", fontFamily: "Anton"}}>
+                                        <i className="fa fa-github" aria-hidden="true"/>
+                                        Github
+                                    </ListItemContent>
                                 </ListItem>
                             </List>
                         </div>

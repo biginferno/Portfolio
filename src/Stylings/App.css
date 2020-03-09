@@ -16,10 +16,14 @@
   width: 100%;
   height: 100%;
 }
-
+.header-right {
+  padding-right: 20px;
+  text-align: right;
+}
 .avatar-img {
   height: 200px;
-  padding-top:5px;
+  padding-top:125px;
+  border-radius: 75%;
 }
 .banner-text {
   background-color: black;
@@ -28,7 +32,24 @@
   margin: auto;
   border-radius:10px;
 }
+.category-tabs {
+  font-size:66px;
+  font-weight:bold;
+  background: #b92b27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+}
+.category-tabs p{
+  font-size: 25px;
+  font-weight: bold;
+}
+/*.content {*/
+/*  background: #b92b27;  !* fallback for old browsers *!*/
+/*  background: -webkit-linear-gradient(to top, #1565C0, #b92b27);  !* Chrome 10-25, Safari 5.1-6 *!*/
+/*  background: linear-gradient(to top, #1565C0, #b92b27); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 
+/*}*/
 .banner-text h1 {
   font-size:66px;
   font-weight:bold;
@@ -97,4 +118,10 @@
 .contact-list i {
   font-size: 60px;
   padding-right: 5rem;
+}
+
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding:2em;
 }

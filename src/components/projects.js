@@ -73,9 +73,10 @@ class Project extends Component {
     }
     render() {
         return(
+
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-                    <Tab>React</Tab>
+                    <Tab><p>React</p></Tab>
                     <Tab>School</Tab>
                     <Tab>Personal</Tab>
                     <Tab>Java</Tab>
@@ -84,7 +85,7 @@ class Project extends Component {
 
                     <Grid >
                         <Cell col={12}>
-                            <div className="content"> {this.toggleCategories()};</div>
+                            <div className="content"> {this.toggleCategories()}</div>
                         </Cell>
                     </Grid>
 

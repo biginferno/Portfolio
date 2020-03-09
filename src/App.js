@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './Stylings/App.css';
 import Main from "./components/main";
 
 import {Layout, Header, Navigation, Drawer, Content} from "react-mdl";
@@ -12,16 +12,17 @@ function App() {
 
       <div className="demo-big-content">
         <Layout>
-          <Header className="header-color" title="Title"  scroll>
+          <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
 
             <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/about">About</Link>
-              <Link to="/project">Projects</Link>
-              <Link to="/contact">Contact</Link>
+
+              <Link className="header-right" to="/resume">Resume</Link>
+              <Link className="header-right" to="/about">About</Link>
+              <Link className="header-right" to="/project">Projects</Link>
+              <Link className="header-right" to="/contact">Contact</Link>
             </Navigation>
           </Header>
-          <Drawer title="Title">
+          <Drawer title="Navigation">
             <Navigation>
               <Link to="/resume">Resume</Link>
               <Link to="/about">About</Link>

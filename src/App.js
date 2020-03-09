@@ -12,7 +12,8 @@ function App() {
 
       <div className="demo-big-content">
         <Layout>
-          <Header title="Title" scroll>
+          <Header className="header-color" title="Title"  scroll>
+
             <Navigation>
               <Link to="/resume">Resume</Link>
               <Link to="/about">About</Link>
@@ -30,7 +31,9 @@ function App() {
           </Drawer>
           <Content>
             <div className="page-content" />
-            {Main}
+
+            <Main/>
+
           </Content>
         </Layout>
       </div>

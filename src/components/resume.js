@@ -1,6 +1,8 @@
 import React, {Component} from "react";
-import {Grid, Cell} from 'react-mdl'
-import Education from './education'
+import {Grid, Cell} from 'react-mdl';
+import Education from './education';
+import Experience from './experience';
+import Skills from './skills'
 class Resume extends Component {
     render() {
         return(
@@ -35,6 +37,19 @@ class Resume extends Component {
                         <Education startYear={2013} endYear={2015} schoolName={"Cuesta College"} schoolDescription={"This is Cuesta College"}/>
                         <Education startYear={2018} endYear={2020} schoolName={"Sonoma State University"} schoolDescription={"This is SSU"}/>
                         <hr style={{borderTop: "3px solid #e22947"}}/>
+                        <h2>Experience</h2>
+                        <Experience startYear={2010} endYear={2013} businessName={"Green Fleet Maintenance Manager"}
+                                    jobDescription={"Contra Costa Centre Association in Walnut Creek, CA, August 2011-August 2013\n" +
+                                    "Cleaned and maintained four separate green fleet buildings\n" +
+                                    "Serviced Smart Cars and Nissan Leafs, Maintained a fleet of electric bicycles and Segways\n"}/>
+                        <Experience startYear={2019} endYear={2020} businessName={"IT Consultant"}
+                                    jobDescription={"Consultant for faculty, staff and students\n" +
+                                    "Responsible for account management of enterprise "}/>
+                        <hr style={{borderTop: "3px solid #e22947"}}/>
+                        <h2>Skills</h2>
+                        <Skills skill={"Javascript"} progress={100}/>
+                        <Skills skill={"Java"} progress={75}/>
+
                     </Cell>
                 </Grid>
             </div>

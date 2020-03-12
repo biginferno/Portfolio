@@ -35,8 +35,13 @@ class Landingpage extends Component {
                                 </div>
                             </div>
                         </Cell>
+
                 </Grid>
+
+
             </div>
+
+
         )
     }
 }

@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 
 function App() {
   return (
-
+    <div>
       <div className="demo-big-content">
         <Layout>
           <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
@@ -36,8 +36,11 @@ function App() {
             <Main/>
 
           </Content>
+
         </Layout>
       </div>
+
+    </div>
   );
 }
 

@@ -16,6 +16,7 @@ const Main = () => (
             <Route path="/project" component={Project} />
             <Route path="/resume" component={Resume} />
     </Switch>
+
 );
 
 //We are exporting a react element, not a component this will correlate

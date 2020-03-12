@@ -48,23 +48,12 @@ class Project extends Component {
                             </CardMenu>
                         </Card>
                     </div>
-                )
+                );
             case 1:
                 return (
-                    <div><h1>This is School</h1></div>
-                )
-            case 2:
-                return (
                     <div><h1>This is Personal</h1></div>
-                )
-            case 3:
-                return (
-                    <div><h1>This is Java</h1></div>
-                )
-            case 4:
-                return (
-                    <div><h1>This is C++</h1></div>
-                )
+                );
+
             default:
                 return (
                     <div><h1>We broke at switch(default)</h1></div>
@@ -76,11 +65,10 @@ class Project extends Component {
 
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-                    <Tab><p>React</p></Tab>
+
                     <Tab>School</Tab>
                     <Tab>Personal</Tab>
-                    <Tab>Java</Tab>
-                    <Tab>C++</Tab>
+
                 </Tabs>
 
                     <Grid >

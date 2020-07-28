@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Grid, Cell} from 'react-mdl';
+import AboutMe from "./about";
 class Landingpage extends Component {
     render() {
         return(
@@ -21,7 +22,7 @@ class Landingpage extends Component {
                                         <i className="fa fa-linkedin-square" aria-hidden="true"/>
                                     </a>
                                     {/*Github*/}
-                                    <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                    <a href="https://github.com/biginferno" rel="noopener noreferrer" target="_blank">
                                         <i className="fa fa-github" aria-hidden="true"/>
                                     </a>
                                     {/*Other*/}
@@ -34,11 +35,15 @@ class Landingpage extends Component {
                                     </a>
                                 </div>
                             </div>
+
+
                         </Cell>
 
                 </Grid>
 
-
+                <div className="landing-grid-about">
+                    <AboutMe/>
+                </div>
             </div>
 
 

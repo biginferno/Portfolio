@@ -6,7 +6,7 @@ import Skills from './skills'
 class Resume extends Component {
     render() {
         return(
-            <div>
+            <div className="resume-body">
                 <Grid>
                     <Cell col={4}>
                         <div style={{textAlign:"center"}}>
@@ -43,8 +43,8 @@ class Resume extends Component {
                                     "Cleaned and maintained four separate green fleet buildings\n" +
                                     "Serviced Smart Cars and Nissan Leafs, Maintained a fleet of electric bicycles and Segways\n"}/>
                         <Experience startYear={2019} endYear={2020} businessName={"IT Consultant"}
-                                    jobDescription={"Consultant for faculty, staff and students\n" +
-                                    "Responsible for account management of enterprise "}/>
+                                    jobDescription={"Consultant for faculty, staff and students.\n" +
+                                    "Responsible for account management of enterprise software"}/>
                         <hr style={{borderTop: "3px solid #e22947"}}/>
                         <h2>Skills</h2>
                         <Skills skill={"Javascript"} progress={100}/>

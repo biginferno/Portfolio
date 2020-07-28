@@ -53,7 +53,6 @@ class Project extends Component {
                 return (
                     <div><h1>This is Personal</h1></div>
                 );
-
             default:
                 return (
                     <div><h1>We broke at switch(default)</h1></div>
@@ -65,12 +64,9 @@ class Project extends Component {
 
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-
                     <Tab>School</Tab>
                     <Tab>Personal</Tab>
-
                 </Tabs>
-
                     <Grid >
                         <Cell col={12}>
                             <div className="content"> {this.toggleCategories()}</div>

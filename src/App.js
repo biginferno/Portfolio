@@ -5,6 +5,7 @@ import Main from "./components/main";
 
 import {Layout, Header, Navigation, Drawer, Content} from "react-mdl";
 import {Link} from "react-router-dom";
+import AboutMe from "./components/landingpage/about";
 
 
 function App() {
@@ -15,17 +16,14 @@ function App() {
           <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
 
             <Navigation>
-
               <Link className="header-right" to="/resume">Resume</Link>
-              <Link className="header-right" to="/about">About</Link>
               <Link className="header-right" to="/project">Projects</Link>
               <Link className="header-right" to="/contact">Contact</Link>
             </Navigation>
           </Header>
-          <Drawer title="Navigation">
+          <Drawer title="Navigation" className="navbar">
             <Navigation>
               <Link to="/resume">Resume</Link>
-              <Link to="/about">About</Link>
               <Link to="/project">Projects</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>

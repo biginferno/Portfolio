@@ -5,7 +5,7 @@ class Social extends Component {
         return (
             <div className="social-links">
                 {/*This will create a linkedin icon that will bring the user to a new webpage at linkedin*/}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <a href="https://www.linkedin.com/in/ryan-romero-58a30b1a3/" rel="noopener noreferrer" target="_blank">
                     <i className="fa fa-linkedin-square" aria-hidden="true"/>
                 </a>
                 {/*Github*/}
@@ -13,13 +13,13 @@ class Social extends Component {
                     <i className="fa fa-github" aria-hidden="true"/>
                 </a>
                 {/*Other*/}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                    <i className="fa fa-twitter" aria-hidden="true"/>
+                <a href="biginferno.github.io" rel="noopener noreferrer" target="_blank">
+                    <i className="fa fa-fire" aria-hidden="true"/>
                 </a>
                 {/*Other*/}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                {/* <a href="http://google.com" rel="noopener noreferrer" target="_blank">
                     <i className="fa fa-youtube-square" aria-hidden="true"/>
-                </a>
+                </a> */}
             </div>
         )
     }

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './Stylings/App.css';
 import Main from "./components/main";
 
-import {Layout, Header, Navigation, Drawer, Content} from "react-mdl";
+import {Layout, Header, Navigation, Drawer, Content, Footer} from "react-mdl";
 import {Link} from "react-router-dom";
 import AboutMe from "./components/landingpage/about";
 
@@ -29,12 +29,14 @@ function App() {
             </Navigation>
           </Drawer>
           <Content>
-            <div className="page-content" />
+            <div className="page-content"  />
 
             <Main/>
 
           </Content>
-
+          {/* <Footer className="footer-size"> */}
+            
+          {/* </Footer> */}
         </Layout>
       </div>
 

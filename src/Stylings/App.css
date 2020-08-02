@@ -4,7 +4,14 @@
   background: linear-gradient(to bottom, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-
+.pege-content {
+  height:100%;
+  width:100%
+}
+.footer-size {
+  height:2rem;
+  width:100%
+}
 .landing-grid {
   background: #b92b27;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
@@ -12,7 +19,7 @@
   position:relative;
   text-align:center;
   width: 100%;
-  height:75%;
+  /* height:100%; */
 
 }
 .landing-grid-about {
@@ -22,6 +29,8 @@
   align-content: center;
   padding-left: 180px;
   padding-top:1px;
+  /* height:100%; */
+  
 }
 .landing-grid-about-text {
   text-align:center;

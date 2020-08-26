@@ -13,8 +13,8 @@ class Social extends Component {
                     <i className="fa fa-github" aria-hidden="true"/>
                 </a>
                 {/*Other*/}
-                <a href="biginferno.github.io" rel="noopener noreferrer" target="_blank">
-                    <i className="fa fa-fire" aria-hidden="true"/>
+                <a href="https://twitter.com/Coding_Inferno" rel="noopener noreferrer" target="_blank">
+                    <i className="fa fa-twitter" aria-hidden="true"/>
                 </a>
                 {/*Other*/}
                 {/* <a href="http://google.com" rel="noopener noreferrer" target="_blank">

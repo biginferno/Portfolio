@@ -3,12 +3,13 @@ import {Grid, Cell} from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills'
+import '../../Stylings/App.css'
 class Resume extends Component {
     render() {
         return(
-            <div className="resume-body">
+            <div className="resume-body" id={this.props.id}>
                 <Grid>
-                    <Cell col={4}>
+                    <Cell col={4} className="personal-info">
                         <div style={{textAlign:"center"}}>
                             <img
                                 src="https://www.w3schools.com/howto/img_avatar.png"
@@ -18,41 +19,42 @@ class Resume extends Component {
 
                         </div>
                         <h2 style={{paddingTop:"2em"}}>Ryan Romero</h2>
-                        <h4 style={{color:"grey"}}> Programmer</h4>
-                        <hr style={{borderTop: "3px solid #833fb2", width: "75%"}}/>
-                        <p>Paragraph text</p>
+                        <h4 style={{color:"grey"}}> Full Stack Developer</h4>
+                        {/* <hr style={{borderTop: "3px solid #833fb2", width: "75%"}}/>
+                        <p>Paragraph text</p> */}
                         <hr style={{borderTop: "3px solid #833fb2", width: "50%"}}/>
-                        <h5>Address</h5>
-                        <p>1 Menlo Way, 94052 </p>
                         <h5> Phone</h5>
-                        <p>9258185555</p>
+                        <p>9258183716</p>
                         <h5>Email</h5>
                         <p>romeroryan01@gmail.com</p>
-                        <h5>Web</h5>
-                        <p>mywebsite.com</p>
+                        <h5>Website</h5>
+                        <p>biginferno.github.io</p>
                         <hr style={{borderTop: "3px solid #833fb2", width: "50%"}}/>
                     </Cell>
                     <Cell col={8} className="resume-right-col">
                         <h2>Education</h2>
-                        <Education startYear={2013} endYear={2015} schoolName={"Cuesta College"} schoolDescription={"This is Cuesta College"}/>
-                        <Education startYear={2018} endYear={2020} schoolName={"Sonoma State University"} schoolDescription={"This is SSU"}/>
+                        <Education startYear={2018} endYear={2020} schoolName={"Sonoma State University"} schoolDescription={"Bachelor of Science Degree in Computer Science ● 3.5 overall GPA ● Dean’s List, Spring Semester 2018 ● Tau Sigma Honors Society"}/>
                         <hr style={{borderTop: "3px solid #e22947"}}/>
                         <h2>Experience</h2>
                         <Experience startYear={2010} endYear={2013} businessName={"Green Fleet Maintenance Manager"}
-                                    jobDescription={"Contra Costa Centre Association in Walnut Creek, CA, August 2011-August 2013\n" +
-                                    "Cleaned and maintained four separate green fleet buildings\n" +
-                                    "Serviced Smart Cars and Nissan Leafs, Maintained a fleet of electric bicycles and Segways\n"}/>
+                                    jobDescription={`Contra Costa Centre Association in Walnut Creek, CA, August 2011-August 2013 Cleaned and maintained four separate green fleet buildings
+Serviced Smart Cars and Nissan Leafs, Maintained a fleet of electric bicycles and Segways
+`}/>
                         <Experience startYear={2019} endYear={2020} businessName={"IT Consultant"}
-                                    jobDescription={"Consultant for faculty, staff and students.\n" +
-                                    "Responsible for account management of enterprise software"}/>
+                                    jobDescription={`First point of contact for campus wide technology needs
+                                    ● Technical troubleshooting
+                                    ● Account provisioning
+                                    ● Media support
+                                    ● Hardware installation`}/>
                         <hr style={{borderTop: "3px solid #e22947"}}/>
-                        <h2>Skills</h2>
-                        <Skills skill={"Javascript"} progress={100}/>
+                        <h2>Skill Level</h2>
+                        
+                        <Skills skill={"Javascript"} progress={90}/>
                         <Skills skill={"Java"} progress={75}/>
-                        <Skills skill={"C++"} progress={50}/>
-                        <Skills skill={"LINUX"} progress={25}/>
-                        <Skills skill={"HTML"} progress={50}/>
-                        <Skills skill={"CSS"} progress={70}/>
+                        <Skills skill={"C++"} progress={70}/>
+                        <Skills skill={"ReactJS"} progress={65}/>
+                        <Skills skill={"HTML"} progress={60}/>
+                        <Skills skill={"CSS"} progress={50}/>
 
                     </Cell>
                 </Grid>

@@ -1,47 +1,23 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './Stylings/App.css';
-import Main from "./components/main";
 
-import {Layout, Header, Navigation, Drawer, Content, Footer} from "react-mdl";
-import {Link} from "react-router-dom";
-import AboutMe from "./components/landingpage/about";
+import Landingpage from "./components/landingpage/landingpage";
+import Resume from "./components/resume/resume";
+import Project from "./components/projects";
+import Navbar from "./components/navbar"
 
 
-function App() {
-  return (
-    <div>
-      <div className="demo-big-content">
-        <Layout>
-          <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
-
-            <Navigation>
-              <Link className="header-right" to="/resume">Resume</Link>
-              <Link className="header-right" to="/project">Projects</Link>
-              <Link className="header-right" to="/contact">Contact</Link>
-            </Navigation>
-          </Header>
-          <Drawer title="Navigation" className="navbar">
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/project">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
-          </Drawer>
-          <Content>
-            <div className="page-content"  />
-
-            <Main/>
-
-          </Content>
-          {/* <Footer className="footer-size"> */}
-            
-          {/* </Footer> */}
-        </Layout>
-      </div>
-
-    </div>
-  );
+class App extends Component{
+  render(){
+    return (
+        <div className="app">
+          <Navbar/>
+          <Landingpage id="landingpage"/>
+          <Resume id="resume"/>
+          <Project id="project"/>
+        </div>
+    );
+  }
 }
 
 export default App;

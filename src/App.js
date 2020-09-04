@@ -15,7 +15,7 @@ class App extends Component{
           <Landingpage id="landingpage"/>
           <Resume id="resume"/>
           <Project id="project"/>
-        </div>
+        </div>  
     );
   }
 }

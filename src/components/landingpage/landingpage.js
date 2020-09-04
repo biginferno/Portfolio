@@ -5,11 +5,10 @@ import Social from "./sociallinks"
 import profile_pic from "./Profile.jpg"
 class Landingpage extends Component {
     render() {
-        // const profile_pic = require("./Profile.jpg")
         
         return(
             <div style={{width:'100%', height:'100%', margin:'auto'}}>
-                <Grid className="landing-grid">
+                <Grid className="landing-grid" noSpacing="true">
                     <Cell col={12}>
                         <img
                             src={profile_pic}

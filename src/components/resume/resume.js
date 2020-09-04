@@ -19,7 +19,7 @@ class Resume extends Component {
 
                         </div>
                         <h2 style={{paddingTop:"2em"}}>Ryan Romero</h2>
-                        <h4 style={{color:"grey"}}> Full Stack Developer</h4>
+                        <h4 style={{color:"black"}}> Full Stack Developer</h4>
                         {/* <hr style={{borderTop: "3px solid #833fb2", width: "75%"}}/>
                         <p>Paragraph text</p> */}
                         <hr style={{borderTop: "3px solid #833fb2", width: "50%"}}/>
@@ -28,24 +28,36 @@ class Resume extends Component {
                         <h5>Email</h5>
                         <p>romeroryan01@gmail.com</p>
                         <h5>Website</h5>
-                        <p>biginferno.github.io</p>
+                        <a href="biginferno.github.io/Portfolio" alt="Portfolio Link" style={{}}>Ryan's Portfolio</a>
                         <hr style={{borderTop: "3px solid #833fb2", width: "50%"}}/>
                     </Cell>
                     <Cell col={8} className="resume-right-col">
                         <h2>Education</h2>
-                        <Education startYear={2018} endYear={2020} schoolName={"Sonoma State University"} schoolDescription={"Bachelor of Science Degree in Computer Science ● 3.5 overall GPA ● Dean’s List, Spring Semester 2018 ● Tau Sigma Honors Society"}/>
+                        <Education 
+                            startYear={"January 2018"} 
+                            endYear={"May 2020"} 
+                            schoolName={"Sonoma State University"} 
+                            schoolDescription={[
+                                ["Bachelor of Science Degree in Computer Science"], 
+                                ["GPA: 3.5"], 
+                                ["Dean’s List, Spring Semester 2018"],
+                                [ "Tau Sigma Honors Society"]]}
+                        />
                         <hr style={{borderTop: "3px solid #e22947"}}/>
                         <h2>Experience</h2>
-                        <Experience startYear={2010} endYear={2013} businessName={"Green Fleet Maintenance Manager"}
-                                    jobDescription={`Contra Costa Centre Association in Walnut Creek, CA, August 2011-August 2013 Cleaned and maintained four separate green fleet buildings
-Serviced Smart Cars and Nissan Leafs, Maintained a fleet of electric bicycles and Segways
-`}/>
-                        <Experience startYear={2019} endYear={2020} businessName={"IT Consultant"}
-                                    jobDescription={`First point of contact for campus wide technology needs
-                                    ● Technical troubleshooting
-                                    ● Account provisioning
-                                    ● Media support
-                                    ● Hardware installation`}/>
+                        {/* <Experience startYear={2010} endYear={2013} businessName={"Green Fleet Maintenance Manager"}
+                                    jobDescription={[]}/> */}
+                        <Experience 
+                            startYear={"January 2019"} 
+                            endYear={"October 2019"} 
+                            businessName={"IT Consultant"}
+                            jobDescription={[
+                            [`First point of contact for campus wide technology needs`],
+                            [`Technical troubleshooting`],
+                            [`Account provisioning`],
+                            [`Media support`],
+                            [`Hardware installation`]]}
+                        />
                         <hr style={{borderTop: "3px solid #e22947"}}/>
                         <h2>Skill Level</h2>
                         
